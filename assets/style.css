@@ -13,6 +13,7 @@
     --container-width-sm: 95%;
 
     --transition: all 400ms ease;
+    --border: 1px solid var(--color-primary)
 }
 
 * {
@@ -222,11 +223,12 @@ nav {
 }
 
 .about-container {
-    width: 60%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     margin-top: 2rem;
+    gap: 2rem
 }
 
 .about__image {
@@ -251,7 +253,7 @@ nav {
 .about__experience,
 .about__education {
     text-align: center;
-    border: 1px solid var(--color-primary);
+    border: var(--border);
     border-radius: 1rem;
     padding: 1rem 4rem;
     margin: 0 auto;
@@ -283,7 +285,7 @@ nav {
 }
 
 .experience__container {
-    border: 1px solid var(--color-primary);
+    border: var(--border);
     border-radius: 1rem;
     margin-top: 3rem;
     padding: 1rem 3rem
@@ -332,15 +334,15 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     gap: 4rem;
-    width: 60%;
+    width: 80%;
     margin-top: 3rem;
 }
 
 .project {
-    border: 1px solid var(--color-primary);
+    border: var(--border);
     border-radius: 2rem;
-    padding: 2rem 3rem;
-    height: 30rem;
+    padding: 2rem 2rem;
+    height: 32rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -349,6 +351,10 @@ nav {
 
 .project__title {
     color: var(--color-primary);
+}
+
+.project p {
+    font-size: 1.2rem;
 }
 
 .button-container {
@@ -364,7 +370,65 @@ nav {
     background-color: var(--color-bg1);
 }
 
+/* ------------ CONTACT -------------- */
 
+.contact {
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    border: var(--border);
+    height: 4rem;
+    border-radius: 2rem;
+}
+
+.contact__info {
+    display: flex;
+    font-size: 1.4rem;
+}
+
+.contact__info i {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+}
+
+.contact__info a {
+    color: var(--color-grey);
+    text-decoration: none;
+}
+
+/* ------------ FOOTER -------------- */
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-top: 1px solid var(--color-grey);
+}
+
+.link__container {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.link__container li a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.link__container a:hover {
+    color: var(--color-white);
+    border-bottom: 1px solid var(--color-white);
+    transition: var(--transition)
+}
 
 /* ------------ MEDIA QUERIES (TABLET) ------------- */
 
