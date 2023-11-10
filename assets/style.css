@@ -30,6 +30,7 @@ html {
 body {
     background-color: var(--color-bg);
     transition: var(--transition);
+    max-width: 100%;
 }
 
 h1 {
@@ -97,7 +98,6 @@ img {
     color: var(--color-white);
     border-color: var(--color-white);
 }
-
 
 /* ------------ NAVBAR -------------- */
 
@@ -237,8 +237,8 @@ nav {
 }
 
 .about__image img {
-    width: 450px; 
-    height: 450px;
+    height: 100%;
+    min-width: 370px;
     border-radius: 2rem;
     object-fit: cover;
     display: block;
@@ -330,9 +330,6 @@ nav {
 }
 
 .projects__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
     gap: 4rem;
     width: 80%;
     margin-top: 3rem;
@@ -342,11 +339,11 @@ nav {
     border: var(--border);
     border-radius: 2rem;
     padding: 2rem 2rem;
-    height: 32rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    height: 32rem !important;
+    display: flex !important;
+    flex-direction: column!important;
+    align-items: center!important;
+    justify-content: space-around!important;
 }
 
 .project__title {
@@ -354,7 +351,7 @@ nav {
 }
 
 .project p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .button-container {
@@ -430,9 +427,15 @@ footer {
     transition: var(--transition)
 }
 
-/* ------------ MEDIA QUERIES (TABLET) ------------- */
 
-@media screen and (max-width:1300px) {
+
+/* ------------ MEDIA QUERIES ------------- */
+
+@media screen and (max-width:1520px) {
+    body {
+        zoom: 0.85;
+    }
+
     .nav__logo {
         font-size: 2.2rem;
     }
@@ -442,7 +445,24 @@ footer {
     }
 }
 
-@media screen and (max-width:1110px) {
+@media screen and (max-width:1320px) {
+    body {
+        zoom: 0.75;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about__experience,
+    .about__education {
+        width: 80%;
+        padding: 0.5rem 2rem;
+    }
+
+
     #open-menu-btn,
     #close-menu-btn {
         display: block;
@@ -491,3 +511,6 @@ footer {
         border: none;
     }
 }
+
+
+/* ---------------- MEDIA QUERIES --------------- */

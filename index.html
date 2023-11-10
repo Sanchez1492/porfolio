@@ -12,6 +12,9 @@
     <!-- CSS link -->
     <link rel="stylesheet" href="./assets/style.css">
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/swiper-bundle.min.css">
+
     <!-- Icon Scout -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 
@@ -89,7 +92,7 @@
         <p>Explore my</p>
         <h2>Experience</h2>
         <div class="experience__container">
-            <h3>Frontend Development</h3>
+            <h3>Frontend Developer</h3>
             <div class="experience__level">
                 <div class="level">
                     <i class="uil uil-check-circle">HTML 5</i>
@@ -131,45 +134,86 @@
     <section class="projects container" id="projects">
         <p>Browse my recent</p>
         <h2>Projects</h2>
-        <div class="projects__container">
-            <div class="project">
-                <div class="project__img">
-                    <img src="./assets/projects/coffee-shop.png" alt="Coffee Shop main view">
+        <div class="projects__container swiper">
+            <div class="swiper-wrapper">
+                <div class="project swiper-slide">
+                    <div class="project__img">
+                        <img src="./assets/projects/coffee-shop.png" alt="Coffee Shop main view">
+                    </div>
+                    <h3 class="project__title">Coffee Shop</h3>
+                    <p clas="project__description">A coffee shop's bussiness website, made with only CSS and HTML</p>
+                    <div class="button-container">
+                        <a href="https://sanchez1492.github.io/coffee-shop/" target="_blank" class="btn btn-color-1">Live Demo</a>
+                        <a href="https://github.com/Sanchez1492/coffee-shop"  target="_blank" class="btn btn-color-2">Github</a>
+                    </div>
                 </div>
-                <h3 class="project__title">Coffee Shop</h3>
-                <p clas="project__description">A coffee shop's bussiness website, made with only CSS and HTML</p>
-                <div class="button-container">
-                    <a href="https://sanchez1492.github.io/coffee-shop/" target="_blank" class="btn btn-color-1">Live Demo</a>
-                    <a href="https://github.com/Sanchez1492/coffee-shop"  target="_blank" class="btn btn-color-2">Github</a>
+                <div class="project swiper-slide">
+                    <div class="project__img">
+                        <img src="./assets/projects/webu.png" alt="Coffee Shop main view">
+                    </div>
+                    <h3 class="project__title">Web-U</h3>
+                    <p clas="project__description">An online university website. Made with HTML, CSS and JavaScript</p>
+                    <div class="button-container">
+                        <a href="https://sanchez1492.github.io/webu/" target="_blank" class="btn btn-color-1">Live Demo</a>
+                        <a href="https://github.com/Sanchez1492/webu" target="_blank" class="btn btn-color-2">Github</a>
+                    </div>
+                </div>
+                <div class="project swiper-slide">
+                    <div class="project__img">
+                        <img src="./assets/projects/real-state.png" alt="Coffee Shop main view">
+                    </div>
+                    <h3 class="project__title">RState</h3>
+                    <p clas="project__description">An online real state agency website. Made with HTML, CSS, Sass and JS. Mobile First design was applied in this project.</p>
+                    <div class="button-container">
+                        <a href="https://sanchez1492.github.io/rental/" target="_blank" class="btn btn-color-1">Live Demo</a>
+                        <a href="https://github.com/Sanchez1492/rental/" target="_blank" class="btn btn-color-2">Github</a>
+                    </div>            
+                </div>
+                <div class="project swiper-slide">
+                    <div class="project__img">
+                        <img src="./assets/projects/coffee-shop.png" alt="Coffee Shop main view">
+                    </div>
+                    <h3 class="project__title">Coffee Shop</h3>
+                    <p clas="project__description">A coffee shop's bussiness website, made with only CSS and HTML</p>
+                    <div class="button-container">
+                        <a href="https://sanchez1492.github.io/coffee-shop/" target="_blank" class="btn btn-color-1">Live Demo</a>
+                        <a href="https://github.com/Sanchez1492/coffee-shop"  target="_blank" class="btn btn-color-2">Github</a>
+                    </div>
+                </div>
+                <div class="project swiper-slide">
+                    <div class="project__img">
+                        <img src="./assets/projects/webu.png" alt="Coffee Shop main view">
+                    </div>
+                    <h3 class="project__title">Web-U</h3>
+                    <p clas="project__description">An online university website. Made with HTML, CSS and JavaScript</p>
+                    <div class="button-container">
+                        <a href="https://sanchez1492.github.io/webu/" target="_blank" class="btn btn-color-1">Live Demo</a>
+                        <a href="https://github.com/Sanchez1492/webu" target="_blank" class="btn btn-color-2">Github</a>
+                    </div>
+                </div>
+                <div class="project swiper-slide">
+                    <div class="project__img">
+                        <img src="./assets/projects/real-state.png" alt="Coffee Shop main view">
+                    </div>
+                    <h3 class="project__title">RState</h3>
+                    <p clas="project__description">An online real state agency website. Made with HTML, CSS, Sass and JS. Mobile First design was applied in this project.</p>
+                    <div class="button-container">
+                        <a href="https://sanchez1492.github.io/rental/" target="_blank" class="btn btn-color-1">Live Demo</a>
+                        <a href="https://github.com/Sanchez1492/rental/" target="_blank" class="btn btn-color-2">Github</a>
+                    </div>            
                 </div>
             </div>
-            <div class="project">
-                <div class="project__img">
-                    <img src="./assets/projects/webu.png" alt="Coffee Shop main view">
-                </div>
-                <h3 class="project__title">Web-U</h3>
-                <p clas="project__description">An online university website. Made with HTML, CSS and JavaScript</p>
-                <div class="button-container">
-                    <a href="https://sanchez1492.github.io/webu/" target="_blank" class="btn btn-color-1">Live Demo</a>
-                    <a href="https://github.com/Sanchez1492/webu" target="_blank" class="btn btn-color-2">Github</a>
-                </div>
+            <div class="swiper-button-next">
+                <i class="uil uil-arrow-circle-right"></i>
             </div>
-            <div class="project">
-                <div class="project__img">
-                    <img src="./assets/projects/real-state.png" alt="Coffee Shop main view">
-                </div>
-                <h3 class="project__title">RState</h3>
-                <p clas="project__description">An online real state agency website. Made with HTML, CSS, Sass and JS. Mobile First design was applied in this project.</p>
-                <div class="button-container">
-                    <a href="https://sanchez1492.github.io/rental/" target="_blank" class="btn btn-color-1">Live Demo</a>
-                    <a href="https://github.com/Sanchez1492/rental/" target="_blank" class="btn btn-color-2">Github</a>
-                </div>            
+            <div class="swiper-button-prev">
+                <i class="uil uil-arrow-circle-left"></i>
             </div>
         </div>
     </section>
 
     <!-- Projects Section ends -->
-    <!-- Projects Section ends -->
+    <!-- Contact Section starts -->
 
     <section class="contact container" id="contact">
         <p>Get in touch</p>
@@ -177,7 +221,7 @@
         <div class="contact-container">
             <div class="contact__info">
                 <i class="uil uil-envelope"></i>
-                <p>dev.sebastian.sanchez@hotmail.com</p>
+                <p>dev.sebastian.sanchez@gmail.com</p>
             </div>
             <div class="contact__info">
                 <i class="uil uil-twitter"></i>
@@ -186,7 +230,7 @@
         </div>
     </section>
 
-    <!-- Projects Section ends -->
+    <!-- Contact Section ends -->
     <!-- Footer Section starts -->
 
     <footer class="container">
@@ -202,6 +246,8 @@
     </footer>
 
     <!-- Footer Section ends -->
+
+    <script src="/swiper-bundle.min.js"></script>
 
     <script src="main.js"></script>
 </body>
