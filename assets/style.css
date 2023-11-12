@@ -189,6 +189,7 @@ nav {
 
 .btn-container {
     display: flex;
+    justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -248,6 +249,7 @@ nav {
 .about__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem
 }
 
 .about__experience,
@@ -280,8 +282,7 @@ nav {
 
 .experience {
     flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 3rem 1rem;
 }
 
 .experience__container {
@@ -308,11 +309,6 @@ nav {
 .level i {
     font-size: 1.8rem;
     color: var(--color-primary);
-}
-
-.level i p {
-    font-size: 1.8rem;
-    color: var(--color-white);
 }
 
 .level__name {
@@ -365,6 +361,18 @@ nav {
 
 .button-container .btn:hover {
     background-color: var(--color-bg1);
+}
+
+.arrow-container {
+    margin-top: 6rem;
+}
+
+.swiper-button-next {
+    margin-right: 50px;
+}
+
+.swiper-button-prev {
+    margin-left: 50px;
 }
 
 /* ------------ CONTACT -------------- */
@@ -432,9 +440,6 @@ footer {
 /* ------------ MEDIA QUERIES ------------- */
 
 @media screen and (max-width:1520px) {
-    body {
-        zoom: 0.85;
-    }
 
     .nav__logo {
         font-size: 2.2rem;
@@ -514,3 +519,86 @@ footer {
 
 
 /* ---------------- MEDIA QUERIES --------------- */
+
+@media screen and (max-width: 500px) {
+
+    /* ---- Profile section ---- */
+    .profile {
+        padding: 4rem 2rem;
+    }
+    
+    /* ---- About section ---- */
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about__image {
+        display: none;
+    }
+
+    .about__cards {
+        width: 90%;
+        margin: auto;
+    }
+
+    .about__education,
+    .about__experience {
+        width: 90vw;
+    }
+
+    /* ---- Experience section ---- */
+    .experience__container {
+        padding: 1rem 1.5rem;
+    }
+
+    .experience__level {
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        text-align: center;
+    }
+
+    .level {
+        padding: 1rem 0
+    }
+
+    .level i {
+        font-size: 1.4rem;
+    }
+
+    .level p {
+        font-size: 1.2rem;
+    }
+
+    /* ---- Project section ---- */
+    .button-container .btn:hover {
+        background-color: none;
+    }
+
+    /* ---- Contact section ---- */
+    .contact-container {
+        flex-direction: column;
+        border: none;
+    }
+
+    .contact__info i {
+        font-size: 1.4rem;
+    }
+
+    .contact__info p {
+        font-size: 1.2rem;
+    }
+
+    .contact__info a {
+        font-size: 1.2rem;
+    }
+
+    /* ---- Footer ---- */
+    .link__container {
+        flex-direction: column;
+    }
+
+}
+
+.inactive {
+    display: none;
+}
