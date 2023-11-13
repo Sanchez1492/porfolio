@@ -450,20 +450,38 @@ footer {
     }
 }
 
-@media screen and (max-width:1320px) {
+@media screen and (max-width:1410px) {
     body {
         zoom: 0.75;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about__cards {
+        zoom: 0.8;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+    .about__image {
+        display: none;
+    }
+    .about__cards {
+        zoom: 1;
     }
 }
 
 @media screen and (max-width:768px) {
-    .about__cards {
-        grid-template-columns: 1fr;
-    }
+    
 
     .about__experience,
     .about__education {
-        width: 80%;
+        width: 48vw;
         padding: 0.5rem 2rem;
     }
 
@@ -484,11 +502,11 @@ footer {
     }
 
     .nav__links {
-        display: flex;
+        display: none;
         position: absolute;
         font-size: 1.4rem;
         flex-direction: column;
-        right: -100%;
+        right: 0;
         top: 6rem;
         background-color: var(--color-primary);
         text-align: center;
@@ -517,33 +535,13 @@ footer {
     }
 }
 
-
-/* ---------------- MEDIA QUERIES --------------- */
-
-@media screen and (max-width: 500px) {
-
-    /* ---- Profile section ---- */
-    .profile {
-        padding: 4rem 2rem;
-    }
-    
-    /* ---- About section ---- */
-    .about-container {
+@media screen and (max-width: 706px) {
+    .about__cards {
         grid-template-columns: 1fr;
     }
-
-    .about__image {
-        display: none;
-    }
-
-    .about__cards {
-        width: 90%;
-        margin: auto;
-    }
-
-    .about__education,
-    .about__experience {
-        width: 90vw;
+    .about__experience,
+    .about__education {
+        width: 58vw;
     }
 
     /* ---- Experience section ---- */
@@ -552,7 +550,6 @@ footer {
     }
 
     .experience__level {
-        grid-template-columns: 1fr 1fr;
         place-items: center;
         text-align: center;
     }
@@ -567,6 +564,52 @@ footer {
 
     .level p {
         font-size: 1.2rem;
+    }
+    
+    .contact__info p {
+        font-size: 1.3rem;
+    }
+
+    .contact__info a {
+        font-size: 1.3rem;
+    }
+}
+
+/* ---------------- MEDIA QUERIES --------------- */
+
+@media screen and (max-width: 500px) {
+    
+    /* ---- Navbar ---- */
+    .nav__logo {
+        font-size: 1.4rem;
+    }
+
+    /* ---- Profile section ---- */
+    .profile {
+        padding: 4rem 2rem;
+    }
+    
+    /* ---- About section ---- */
+    
+    .about__cards {
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .about__education,
+    .about__experience {
+        width: 90vw;
+    }
+
+    .about__education i,
+    .about__experience i {
+        font-size: 1.9rem;
+    }
+
+    /* ---- Experience section ---- */
+    .experience__level {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* ---- Project section ---- */
@@ -585,11 +628,11 @@ footer {
     }
 
     .contact__info p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contact__info a {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     /* ---- Footer ---- */
