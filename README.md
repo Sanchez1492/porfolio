@@ -15,8 +15,7 @@ I'm always interested in collaborations and opportunities to learn and grow. Fee
 
 Thanks for visiting! 🚀
 
-# -------------
-
+-------------
 # Portfolio personal
 ¡Bienvenido a mi portfolio! 👋 Soy Sebastian Sanchez, un apasionado desarrollador front-end. Este portfolio es mi espacio digital donde comparto algunos de los proyectos en los que he trabajado y mi progreso en el mundo del desarrollo web.
 
