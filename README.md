@@ -1,5 +1,5 @@
 # Personal Portfolio
-Welcome to my portfolio! 👋 I'm Sebastian Sanchez, a passionate front-end developer. This portfolio serves as my digital space where I showcase some of the projects I've worked on and document my journey in the world of web development.
+Welcome to my portfolio! 👋 I'm Sebastian Sanchez, a front-end developer. This portfolio serves as my digital space where I showcase some of the projects I've worked on and document my journey in the world of web development.
 
 # About Me
 I'm a code enthusiast who enjoys turning ideas into reality through programming. My focus is on clean design usability, and efficient implementation. Besides my love for technology, I'm a self-help book aficionado always ready to share insights.
@@ -17,7 +17,7 @@ Thanks for visiting! 🚀
 
 -------------
 # Portfolio personal
-¡Bienvenido a mi portfolio! 👋 Soy Sebastian Sanchez, un apasionado desarrollador front-end. Este portfolio es mi espacio digital donde comparto algunos de los proyectos en los que he trabajado y mi progreso en el mundo del desarrollo web.
+¡Bienvenido a mi portfolio! 👋 Soy Sebastian Sanchez, un desarrollador front-end. Este portfolio es mi espacio digital donde comparto algunos de los proyectos en los que he trabajado y mi progreso en el mundo del desarrollo web.
 
 # Acerca de mí
 Soy un entusiasta del código que disfruta convirtiendo ideas en realidad a través de la programación. Mi enfoque se centra en el diseño limpio y la implementación eficiente. Además de mi amor por la tecnología, soy un fanático de los libros de autoayuda que siempre estoy dispuesto a compartir.
